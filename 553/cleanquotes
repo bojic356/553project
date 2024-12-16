@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in *.r.xlsx
+do
+	cat $file | tr -d -c '[:alnum:] \n' > $file.clean
+done
